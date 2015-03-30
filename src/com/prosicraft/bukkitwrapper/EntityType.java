@@ -27,20 +27,15 @@ public enum EntityType {
 	PRIMED_TNT,
 	FALLING_BLOCK,
 	FIREWORK,
+	ARMOR_STAND,
+	MINECART_COMMAND,
 	BOAT,
 	MINECART,
-	MINECART_COMMAND,		
 	MINECART_CHEST,
 	MINECART_FURNACE,
 	MINECART_TNT,
 	MINECART_HOPPER,
 	MINECART_MOB_SPAWNER,
-	COMPLEX_PART,
-	ENDER_CRYSTAL,
-	SPLASH_POTION,
-	EGG,
-	FISHING_HOOK,
-	
 	CREEPER,
 	SKELETON,
 	SPIDER,
@@ -58,6 +53,8 @@ public enum EntityType {
 	WITHER,
 	BAT,
 	WITCH,
+	ENDERMITE,
+	GUARDIAN,
 	PIG,
 	SHEEP,
 	COW,
@@ -69,15 +66,17 @@ public enum EntityType {
 	OCELOT,
 	IRON_GOLEM,
 	HORSE,
+	RABBIT,
 	VILLAGER,
-	PLAYER,	
-	
+	ENDER_CRYSTAL,
+	SPLASH_POTION,
+	EGG,
+	FISHING_HOOK,
 	LIGHTNING,
 	WEATHER,
-	
-	
+	PLAYER,
+	COMPLEX_PART,
 	UNKNOWN;
-	
 	
 	public boolean equalsBukkitEntityType(org.bukkit.entity.EntityType ty) {
 		return name().equalsIgnoreCase(ty.name());

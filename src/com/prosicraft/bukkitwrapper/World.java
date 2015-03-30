@@ -35,6 +35,10 @@ public class World {
 		return internal.getName();
 	}
 	
+	public boolean equals(World o) {
+		return internal.equals(o.getInternal());
+	}		
+	
 	public List<LivingEntity> getLivingEntities() {
 		List<LivingEntity> res = new ArrayList<>();
 		if (internal == null)

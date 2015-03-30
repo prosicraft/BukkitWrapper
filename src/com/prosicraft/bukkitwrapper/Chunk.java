@@ -24,12 +24,20 @@ public class Chunk {
 	public Chunk(org.bukkit.Chunk intrnl) {
 		internal = intrnl;
 	}
+	
+	public boolean equals(Chunk c) {
+		return c.internal == internal;
+	}
 
 	public int getX() {
 		return internal.getX();
 	}
 	
 	public int getZ() {
-		return internal.getZ();
+		return internal.getZ();				
+	}
+	
+	public World getWorld() {
+		return new World(internal.getWorld());
 	}
 }

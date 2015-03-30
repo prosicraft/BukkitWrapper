@@ -64,7 +64,11 @@ public class Server {
 	}
 	
 	public World getWorld(String name) {
-		return new World(internal.getWorld(name));
+		org.bukkit.World bukkitWorld = internal.getWorld(name);
+		if (bukkitWorld == null)
+			return null;
+			
+		return new World(bukkitWorld);
 	}		
 	
 	public List<World> getWorlds() {
